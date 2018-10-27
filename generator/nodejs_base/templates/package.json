@@ -1,0 +1,20 @@
+{
+  "name": "<%= blueprint.identifier %>-seed",
+  "version": "0.1.0",
+  "author": "Codotype MongoDB Dataworker Generator",
+  "private": true,
+  "scripts": {
+    <%_ blueprint.schemas.forEach((schema, schemaIndex) => { _%>
+    "seed-<%= schema.identifier_plural %>-csv": "node --max-old-space-size=4096 ./scripts/import-<%= schema.identifier_plural %>-csv.js",
+    "seed-<%= schema.identifier_plural %>-json": "node --max-old-space-size=4096 ./scripts/import-<%= schema.identifier_plural %>-json.js"<%= helpers.trailingComma(blueprint.schemas, schemaIndex) %>
+    <%_ }) _%>
+  },
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "csvtojson": "^2.0.8",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.7.1"
+  }
+}

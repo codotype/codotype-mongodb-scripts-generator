@@ -1,0 +1,11 @@
+<%- schema.attributes.map(s => '"' + s.identifier + '"').join(", ")%>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
+<%- randomCsvDataRow(schema) %>
