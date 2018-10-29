@@ -1,7 +1,7 @@
 {
   "id": "codotype-mongodb-dataworker",
   "label": "MongoDB Scripts",
-  "icon": "devicon-python-plain",
+  "icon": "devicon-mongodb-plain",
   "description": "Postman is a very helpful API development tool",
   "tech_tags": ["MongoDB"],
   "type_tags": ["API"],
