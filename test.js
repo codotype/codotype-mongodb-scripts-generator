@@ -3,9 +3,10 @@ const CodotypeRuntime = require('@codotype/runtime')
 const buildConfiguration = require('@codotype/util/lib/buildConfiguration')
 
 // Imports blueprint data
-const blueprint = require('@codotype/blueprints/lib/todo-list.json')
+// const blueprint = require('@codotype/blueprints/lib/todo-list.json')
 // const blueprint = require('@codotype/blueprints/lib/team-lists.json')
 // const blueprint = require('@codotype/blueprints/lib/textbook-library.json')
+const blueprint = require('./cloud_and_things_codotype.json')
 
 // Defines build
 const build = {

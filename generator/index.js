@@ -1,6 +1,6 @@
-const Generator = require('@codotype/generator')
 
-module.exports = class MongoDBScripts extends Generator {
+module.exports = {
+  name: 'MongoDB-Dataworker',
   async write () {
     await this.composeWith('./nodejs_base')
     await this.composeWith('./nodejs_scripts')
