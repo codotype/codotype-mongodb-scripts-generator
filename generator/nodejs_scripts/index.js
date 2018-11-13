@@ -1,4 +1,3 @@
-const Generator = require('@codotype/generator')
 const sample = require('lodash/sample')
 
 // // // //
@@ -34,8 +33,8 @@ const words = [
 
 // // // //
 
-module.exports = class MongoDBScriptsNodeJS extends Generator {
-
+module.exports = {
+  name: 'NodeJS-Scripts',
   async forEachSchema({ blueprint, configuration, schema }) {
 
     // Generates a random set of CSV separated
@@ -95,5 +94,4 @@ module.exports = class MongoDBScriptsNodeJS extends Generator {
     // )
 
   }
-
 }
