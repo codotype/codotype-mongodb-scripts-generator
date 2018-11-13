@@ -1,14 +1,28 @@
 {
   "id": "codotype-mongodb-dataworker",
-  "label": "MongoDB Scripts",
-  "icon": "devicon-mongodb-plain",
-  "description": "Postman is a very helpful API development tool",
-  "tech_tags": ["MongoDB"],
-  "type_tags": ["API"],
+  "label": "MongoDB Data Worker",
+  "icon": "https://raw.githubusercontent.com/codotype/codotype-nodejs-express-mongodb-generator/master/nodejs.png",
+  "description": "Generates a series of scripts and CSV templates to easily import data into MongoDB",
+  "tech_tags": ["MongoDB", "Mongoose", "CSV"],
+  "type_tags": ["Utility"],
   "self_configuring": false,
-  "project_path": "mongodb-dataworker",
+  "project_path": "mongodb-data-importer",
   "addons": [],
-  "global_options": [],
+  "global_options": [
+    {
+      "label": "Import Script Type",
+      "identifier": "import_script_type",
+      "type": "TEXT_SELECT",
+      "default_value": "csv",
+      "options": [
+          { "id": 1, "value": "csv", "label": "CSV Import Scripts" },
+          { "id": 2, "value": "json", "label": "JSON Import Scripts" },
+          { "id": 3, "value": "both", "label": "Both CSV and JSON Import Scripts" }
+      ],
+      "help": "Specify the type of script you would like to import data into MongoDB",
+      "more_info_url": "http://mongodb.com"
+    }
+  ],
   "model_options": [],
   "github_url": "codotype/codotype-mongodb-dataworker-generator",
   "version": "0.1.0",
